@@ -3,9 +3,7 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.PneumaticsModuleType;
-import edu.wpi.first.wpilibj.PowerDistribution;
 import edu.wpi.first.wpilibj.TimedRobot;
-import edu.wpi.first.wpilibj.PowerDistribution.ModuleType;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
@@ -19,12 +17,8 @@ import frc.robot.subsystems.Launcher;
 import frc.robot.subsystems.PhotonLEDs;
 import frc.robot.subsystems.Tower;
 import frc.robot.subsystems.VisionLL;
-import frc.robot.subsystems.Swerve.Swerve;
 import frc.robot.telemetry.Dashboard;
 import frc.robot.telemetry.Log;
-import frc.robot.telemetry.ShuffleboardTabs;
-import frc.lib.drivers.Photon.Animation;
-import frc.lib.drivers.Photon.Color;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -36,7 +30,6 @@ import frc.lib.drivers.Photon.Color;
 public class Robot extends TimedRobot {
 
     // subsystems and hardware are defined here
-    public static final Swerve swerve = new Swerve();
     public static final Intake intake = new Intake();
     public static final Indexer indexer = new Indexer();
     public static final Tower tower = new Tower();
