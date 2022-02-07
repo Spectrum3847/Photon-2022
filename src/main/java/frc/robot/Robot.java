@@ -11,6 +11,7 @@ import frc.lib.util.SpectrumPreferences;
 import frc.lib.drivers.Photon;
 import frc.lib.sim.PhysicsSim;
 import frc.robot.subsystems.Climber;
+import frc.robot.subsystems.Drive;
 import frc.robot.subsystems.Indexer;
 import frc.robot.subsystems.Intake;
 import frc.robot.subsystems.Launcher;
@@ -30,6 +31,8 @@ import frc.robot.telemetry.Log;
 public class Robot extends TimedRobot {
 
     // subsystems and hardware are defined here
+    
+    public static final Drive drive = new Drive();
     public static final Intake intake = new Intake();
     public static final Indexer indexer = new Indexer();
     public static final Tower tower = new Tower();

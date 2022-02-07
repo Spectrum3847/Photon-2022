@@ -29,7 +29,6 @@ public class Dashboard {
 
     //Check each subsystems dashboard values and update them
     private static void updatePutFast() {
-        Robot.swerve.dashboard();
         Robot.launcher.dashboard();
         Robot.tower.dashboard();
         Robot.intake.dashboard();

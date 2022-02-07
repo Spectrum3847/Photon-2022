@@ -7,11 +7,8 @@ import frc.lib.gamepads.AndButton;
 import frc.lib.gamepads.XboxGamepad;
 import frc.lib.util.Logger;
 import frc.robot.Robot.RobotState;
-import frc.robot.commands.ResetGyro;
+//import frc.robot.commands.ResetGyro;
 import frc.robot.commands.ballpath.BallPath;
-import frc.robot.commands.swerve.ClimberSwerve;
-import frc.robot.commands.swerve.LLAim;
-import frc.robot.commands.swerve.TurnToAngle;
 import frc.robot.telemetry.Log;
 
 public class Gamepads {
@@ -82,22 +79,22 @@ public class Gamepads {
 	public static void driverBindings() {
 		// Driver Controls
 		// Reset Gyro based on left bumper and the abxy buttons
-		new AndButton(driver.leftBumper, driver.yButton).whileHeld(new ResetGyro(0));
-		new AndButton(driver.leftBumper, driver.xButton).whileHeld(new ResetGyro(90));
-		new AndButton(driver.leftBumper, driver.aButton).whileHeld(new ResetGyro(180));
-		new AndButton(driver.leftBumper, driver.bButton).whileHeld(new ResetGyro(270));
+		//new AndButton(driver.leftBumper, driver.yButton).whileHeld(new ResetGyro(0));
+		//new AndButton(driver.leftBumper, driver.xButton).whileHeld(new ResetGyro(90));
+		//new AndButton(driver.leftBumper, driver.aButton).whileHeld(new ResetGyro(180));
+		//new AndButton(driver.leftBumper, driver.bButton).whileHeld(new ResetGyro(270));
 
 		// turn the robot to a cardinal direction
-		driver.yButton.whileHeld(new TurnToAngle(0));
-		driver.xButton.whileHeld(new TurnToAngle(90));
-		driver.aButton.whileHeld(new TurnToAngle(180));
-		driver.bButton.whileHeld(new TurnToAngle(270));
+		//driver.yButton.whileHeld(new TurnToAngle(0));
+		//driver.xButton.whileHeld(new TurnToAngle(90));
+		//driver.aButton.whileHeld(new TurnToAngle(180));
+		//driver.bButton.whileHeld(new TurnToAngle(270));
 
 		// Climber mode to disable field relative
-		driver.startButton.whileHeld(new ClimberSwerve());
+		//driver.startButton.whileHeld(new ClimberSwerve());
 
 		// Aim with limelight
-		driver.rightBumper.whileHeld(new LLAim());
+		//driver.rightBumper.whileHeld(new LLAim());
 	}
 
 	public static void operatorBindings() {

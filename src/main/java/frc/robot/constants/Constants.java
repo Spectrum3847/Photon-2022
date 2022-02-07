@@ -9,9 +9,10 @@ public final class Constants {
 
         public static final int pigeonID = 0;
 
-        public static final int driveMotor0 = 1;
-        public static final int angleMotor0 = 2;
-        public static final int driveMotor1 = 11;
+        public static final int driveLeftLeader = 1;
+        public static final int driveRightLeader = 11;
+        public static final int driveLeft = 2;
+        public static final int driveRight = 12;
         public static final int angleMotor1 = 12;
         public static final int driveMotor2 = 21;
         public static final int angleMotor2 = 22;

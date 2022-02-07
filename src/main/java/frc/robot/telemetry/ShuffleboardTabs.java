@@ -6,7 +6,6 @@ import edu.wpi.first.wpilibj.Notifier;
 import frc.robot.telemetry.shuffleboard.GamepadsTelemetry;
 import frc.robot.telemetry.shuffleboard.IntakeTelemetry;
 import frc.robot.telemetry.shuffleboard.MainTelemetry;
-import frc.robot.telemetry.shuffleboard.SwerveTelemetry;
 import frc.robot.telemetry.shuffleboard.TowerTelemetry;
 
 // Class that wraps all of the interaction with the Shuffleboard
@@ -22,7 +21,6 @@ public class ShuffleboardTabs {
 
     // Tabs
     private MainTelemetry m_mainTelemetry;
-    private SwerveTelemetry m_swerveTelemetry;
     public IntakeTelemetry m_IntakeTelemetry;
     public GamepadsTelemetry m_GamepadsTelemetry;
     private TowerTelemetry m_towerTelemetry;
@@ -31,7 +29,6 @@ public class ShuffleboardTabs {
         printLow("Constructing ShuffleboardTabs...");
 
         m_mainTelemetry = new MainTelemetry();
-        m_swerveTelemetry = new SwerveTelemetry();
         m_IntakeTelemetry = new IntakeTelemetry(); 
         m_GamepadsTelemetry = new GamepadsTelemetry();
         m_towerTelemetry = new TowerTelemetry();
@@ -40,7 +37,6 @@ public class ShuffleboardTabs {
     public void initialize() {
         printLow("Initializing ShuffleboardTabs...");
 
-        m_swerveTelemetry.initialize();
         m_IntakeTelemetry.initialize();
         m_mainTelemetry.initialize();
         m_GamepadsTelemetry.initialize();
@@ -53,7 +49,6 @@ public class ShuffleboardTabs {
     //We don't need to assign values every program cycle
     private void update() {
             m_mainTelemetry.update();
-            m_swerveTelemetry.update();
             m_IntakeTelemetry.update();
             m_GamepadsTelemetry.update();
             m_towerTelemetry.update();

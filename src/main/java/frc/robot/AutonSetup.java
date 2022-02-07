@@ -1,7 +1,7 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj2.command.Command;
-import frc.robot.commands.auto.TestPathPlanner;
+import edu.wpi.first.wpilibj2.command.WaitCommand;
 
 public class AutonSetup {
 
@@ -12,6 +12,6 @@ public class AutonSetup {
    */
   public static Command getAutonomousCommand() {
     // An ExampleCommand will run in autonomous
-    return new TestPathPlanner();
+    return new WaitCommand(4);
   }
 }
